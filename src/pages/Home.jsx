@@ -9,7 +9,7 @@ export async function loader({ request }) {
   const searchTerm = url.searchParams.get("search") || "marvel";
 
   try {
-    const movieSearchEndpoint = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`;
+    const movieSearchEndpoint = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`;
     const response = await axios.get(movieSearchEndpoint);
 
     return {
