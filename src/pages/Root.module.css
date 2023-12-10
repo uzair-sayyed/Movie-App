@@ -1,0 +1,8 @@
+.nav {
+  margin-bottom: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--dark-blue-color);
+}
